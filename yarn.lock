@@ -1149,6 +1149,14 @@
     babylonjs-gltf2interface "4.2.0"
     tslib ">=1.10.0"
 
+"@babylonjs/procedural-textures@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/procedural-textures/-/procedural-textures-4.2.0.tgz#800b1a3bb596dc1ad9793806555df4725ed96ced"
+  integrity sha512-yUOkc9VGlNXnARNScmgYfE18vciIPxDJsx8WrXq5+tffYTrPTfNClie65x49g7U2VEVHqsPu/OvJxcPLVLaTvA==
+  dependencies:
+    "@babylonjs/core" "4.2.0"
+    tslib ">=1.10.0"
+
 "@base2/pretty-print-object@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.1.tgz#371ba8be66d556812dc7fb169ebc3c08378f69d4"

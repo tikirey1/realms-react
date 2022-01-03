@@ -4,6 +4,7 @@ const withTM = require("next-transpile-modules")([
   "@babylonjs/core",
   "@babylonjs/gui",
   "@babylonjs/loaders",
+  "@babylonjs/procedural-textures",
   "react-babylonjs",
 ]);
 
