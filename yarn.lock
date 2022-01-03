@@ -1125,6 +1125,30 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
+"@babylonjs/core@4.2.0", "@babylonjs/core@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/core/-/core-4.2.0.tgz#d1cfd43d7e3d2e58cde79083f04eeb607f6c8f18"
+  integrity sha512-sZQigPvMDc0pcgwlKvTF5gsMzGwT8gelQIOyxELrohdFu12pHGhIr61+yVxxq9tpCdzyYD9kS8LM0w2y+5ypkg==
+  dependencies:
+    tslib ">=1.10.0"
+
+"@babylonjs/gui@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/gui/-/gui-4.2.0.tgz#c2a35ca6724759731fe0c4ddbfe2490301847f93"
+  integrity sha512-AQnqwFDmQ05FAw4B0BPVUFqWgdSKVI23qVHm/uOOMBQhMo8+WE2pTNATm6Qw/HDVLCp5qUjwIij/3JtG5s0fBw==
+  dependencies:
+    "@babylonjs/core" "4.2.0"
+    tslib ">=1.10.0"
+
+"@babylonjs/loaders@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/loaders/-/loaders-4.2.0.tgz#a9902dc277c16dcd22cd1907f86310e211c247cb"
+  integrity sha512-feCmp4I+suBNLko3wGFNZpDg1Bqt9NxEuhKZ+epmaIWSqKEQAMhDvdehcq9vETTVKULkzRGZdDrZmEX0weG80g==
+  dependencies:
+    "@babylonjs/core" "4.2.0"
+    babylonjs-gltf2interface "4.2.0"
+    tslib ">=1.10.0"
+
 "@base2/pretty-print-object@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.1.tgz#371ba8be66d556812dc7fb169ebc3c08378f69d4"
@@ -4384,6 +4408,11 @@ babel-plugin-syntax-jsx@^6.18.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
   integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
 
+babylonjs-gltf2interface@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/babylonjs-gltf2interface/-/babylonjs-gltf2interface-4.2.0.tgz#b0ef1e11e3574cf2c6f573d0c5c34857a2a7b322"
+  integrity sha512-Fn/ThxwZWP9kEAqk+9FX9CAeF4ah/I0/8wzAZR8MQuYqlYpEfM+E/IztJ+4LoOOxQYMWNs5lgj8OXSkX0tqc4g==
+
 bail@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/bail/-/bail-1.0.5.tgz#b6fa133404a392cbc1f8c4bf63f5953351e7a776"
@@ -5956,7 +5985,7 @@ enhanced-resolve@^4.5.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-enhanced-resolve@^5.8.3:
+enhanced-resolve@^5.7.0, enhanced-resolve@^5.8.3:
   version "5.8.3"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.8.3.tgz#6d552d465cce0423f5b3d718511ea53826a7b2f0"
   integrity sha512-EGAbGvH7j7Xt2nc0E7D99La1OiEs8LnyimkRgwExpUMScN6O+3x9tIWs7PLQZVNx4YD+00skHXPXi1yQHpAmZA==
@@ -9000,6 +9029,14 @@ next-auth@*, next-auth@^4.0.6:
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
 
+next-transpile-modules@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/next-transpile-modules/-/next-transpile-modules-9.0.0.tgz#133b1742af082e61cc76b02a0f12ffd40ce2bf90"
+  integrity sha512-VCNFOazIAnXn1hvgYYSTYMnoWgKgwlYh4lm1pKbSfiB3kj5ZYLcKVhfh3jkPOg1cnd9DP+pte9yCUocdPEUBTQ==
+  dependencies:
+    enhanced-resolve "^5.7.0"
+    escalade "^3.1.1"
+
 next@12.0.4:
   version "12.0.4"
   resolved "https://registry.yarnpkg.com/next/-/next-12.0.4.tgz#096578b320f0faf0bd51798decb39aaf00052efe"
@@ -10264,6 +10301,13 @@ raw-loader@^4.0.2:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
+react-babylonjs@^3.0.31:
+  version "3.0.31"
+  resolved "https://registry.yarnpkg.com/react-babylonjs/-/react-babylonjs-3.0.31.tgz#37c20a07669e76e27f2874ca10292b4b1b19abfa"
+  integrity sha512-JrX69OWBxZwXuv3qkg9GBg6OUIBMFJg+gMaYHpWkKF5p4dHAyB6nflva9XTXTR4+KGgjLj5bLkiWwh98BueDvQ==
+  dependencies:
+    react-reconciler "^0.26.2"
+
 react-colorful@^5.1.2:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/react-colorful/-/react-colorful-5.5.1.tgz#29d9c4e496f2ca784dd2bb5053a3a4340cfaf784"
@@ -10402,6 +10446,15 @@ react-popper@^2.2.4:
   dependencies:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
+
+react-reconciler@^0.26.2:
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.26.2.tgz#bbad0e2d1309423f76cf3c3309ac6c96e05e9d91"
+  integrity sha512-nK6kgY28HwrMNwDnMui3dvm3rCFjZrcGiuwLc5COUipBK5hWHLOxMJhSnSomirqWwjPBJKV1QcbkI0VJr7Gl1Q==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    scheduler "^0.20.2"
 
 react-refresh@0.8.3:
   version "0.8.3"
@@ -11930,15 +11983,15 @@ tsconfig-paths@^3.11.0, tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
+tslib@>=1.10.0, tslib@^2.0.0, tslib@^2.0.1, tslib@^2.0.3, tslib@^2.3.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
 tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.0.0, tslib@^2.0.1, tslib@^2.0.3, tslib@^2.3.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tsutils@^3.21.0:
   version "3.21.0"
