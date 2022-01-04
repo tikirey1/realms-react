@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import BridgeModal from "components/bridge/Modal";
+import BridgeModal from "~/components/bridge/Modal";
 import dynamic from "next/dynamic";
 
 const TowerWithNoSsr = dynamic(
