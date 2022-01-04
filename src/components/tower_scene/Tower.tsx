@@ -1,5 +1,6 @@
 import React, { useMemo, Suspense } from "react";
 import { Vector3 } from "@babylonjs/core";
+import "@babylonjs/loaders/glTF";
 
 import {
   Engine,

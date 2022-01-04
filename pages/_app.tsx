@@ -4,8 +4,6 @@ import { Web3ReactProvider } from "@web3-react/core";
 import { Web3Provider } from "@ethersproject/providers";
 import { UserAgentProvider } from "@quentin-sommer/react-useragent";
 
-import "@babylonjs/loaders/glTF";
-
 import "tailwindcss/tailwind.css";
 
 function getLibrary(provider: any, connector: any): Web3Provider {
