@@ -10,7 +10,6 @@ import {
   TaskType,
 } from "react-babylonjs";
 
-import styles from "./Tower.module.css";
 import ShieldModel from "./Shield";
 
 const modelTasks: Task[] = [
@@ -36,30 +35,35 @@ const TowerModel = () => {
 
 const SceneWithTower = () => {
   return (
-    <div className={styles.canvasContainer} style={{ width: "100%" }}>
-      <Engine antialias canvasId="babylonJS">
-        <Scene>
-          <arcRotateCamera
-            name="camera1"
-            target={Vector3.Zero()}
-            alpha={Math.PI / 2}
-            beta={Math.PI / 4}
-            radius={8}
-          />
-          <hemisphericLight
-            name="light1"
-            intensity={0.7}
-            direction={Vector3.Up()}
-          />
-          <AssetManagerContextProvider>
-            <Suspense fallback={null}>
-              <TowerModel />
-            </Suspense>
-          </AssetManagerContextProvider>
-          <ShieldModel />
-        </Scene>
-      </Engine>
-    </div>
+    <Engine
+      canvasStyle={{ width: "100%", height: "100vh" }}
+      antialias
+      canvasId="babylonJS"
+    >
+      <Scene>
+        <arcRotateCamera
+          name="camera1"
+          target={Vector3.Up()}
+          alpha={Math.PI / 4}
+          beta={Math.PI / 2}
+          upperBetaLimit={Math.PI / 2} // So Camera doesn't go below ground
+          lowerRadiusLimit={13}
+          upperRadiusLimit={15}
+          radius={14}
+        />
+        <hemisphericLight
+          name="light1"
+          intensity={0.7}
+          direction={Vector3.Up()}
+        />
+        <AssetManagerContextProvider>
+          <Suspense fallback={null}>
+            <TowerModel />
+          </Suspense>
+        </AssetManagerContextProvider>
+        <ShieldModel />
+      </Scene>
+    </Engine>
   );
 };
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Tower from "components/tower_scene/Tower";
 import BridgeModal from "components/bridge/Modal";
 
 const Home: NextPage = () => {
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       >
         Show Modal
       </button>
+      <Tower />
     </div>
   );
 };
