@@ -1,8 +1,15 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Tower from "components/tower_scene/Tower";
 import BridgeModal from "components/bridge/Modal";
+import dynamic from "next/dynamic";
+
+const TowerWithNoSsr = dynamic(
+  () => import("../src/components/tower_scene/Tower"),
+  {
+    ssr: false,
+  }
+);
 
 const Home: NextPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -23,7 +30,7 @@ const Home: NextPage = () => {
       >
         Show Modal
       </button>
-      <Tower />
+      <TowerWithNoSsr />
     </div>
   );
 };
