@@ -32,3 +32,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Temporary
+
+Since there are well-known problems with Storybook and Webpack5, a temporary solution to keep Storybook working is to install additional modules:
+
+```bash
+  "crypto": "npm:crypto-browserify",
+  "stream": "npm:stream-browserify",
+  "https": "npm:https-browserify",
+  "http": "npm:stream-http",
+  "os": "npm:os-browserify"
+```
